@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RCW Energy Services | Water Transfer • Hydrovac • Rig Washing • Land Management • Rentals • Roustabout</title>
+  <meta name="description" content="RCW Energy Services delivers reliable water transfer, hydrovac, rig washing, land management, rentals, and roustabout services with 24/7 dispatch and safety-first operations across the Haynesville Shale." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='100%25' height='100%25' fill='%23000000'/%3E%3Ctext x='50%25' y='57%25' font-size='42' text-anchor='middle' fill='%2339FF14' font-family='Arial Black, sans-serif'%3ERCW%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RCW Energy Services" />
+  <meta property="og:description" content="Haynesville Shale — Water Transfer • Hydrovac • Rig Washing • Land Mgmt • Rentals • Roustabout" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lbyerlyrcw.github.io/rcw-energy-services/assets/img/og-cover.png" />
+
+  <!-- JSON-LD (Organization / Service) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RCW Energy Services",
+    "description": "Water transfer, hydrovac, rig washing, land management, rentals, and roustabout services in the Haynesville Shale.",
+    "areaServed": "Haynesville Shale",
+    "url": "https://lbyerlyrcw.github.io/rcw-energy-services/",
+    "telephone": "+1-903-999-9999",
+    "sameAs": [],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "department": [
+      {"@type": "Organization","name": "Water Transfer"},
+      {"@type": "Organization","name": "Hydrovac"},
+      {"@type": "Organization","name": "Rig Washing"},
+      {"@type": "Organization","name": "Land Management"},
+      {"@type": "Organization","name": "Rentals"},
+      {"@type": "Organization","name": "Roustabout"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{ --green:#39FF14; --green-600:#19d300; --black:#000; --off-black:#0b0b0b; --slate:#9ca3af; --white:#fff; --grid:rgba(57,255,20,0.08); --card:#0f0f0f; --ring:rgba(57,255,20,0.35) }
+    @font-face { font-family: 'Serpentine-Bold-Oblique'; src:url('/assets/fonts/Serpentine-BoldOblique.woff2') format('woff2'), url('/assets/fonts/Serpentine-BoldOblique.woff') format('woff'); font-weight:700; font-style:oblique; font-display:swap }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background: radial-gradient(1200px 600px at 80% -10%, var(--grid), transparent 60%), linear-gradient(0deg, var(--off-black), var(--black)); color:var(--white); font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6}
+    a{color:var(--green); text-decoration:none} a:hover{color:var(--green-600)} img{max-width:100%; display:block}
+    .container{max-width:1200px; margin:0 auto; padding:0 20px}
+
+    header{position:sticky; top:0; z-index:50; background:rgba(0,0,0,0.7); backdrop-filter: blur(10px); border-bottom:1px solid rgba(57,255,20,0.18)}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; height:68px}
+    .logo{display:flex; align-items:center; gap:12px; text-transform:uppercase}
+    .logo-badge{width:44px; height:44px; display:grid; place-items:center; background:conic-gradient(from 210deg at 50% 50%, var(--green), #1f1); color:#000; font-weight:900; border-radius:6px; box-shadow:0 0 0 2px #000 inset, 0 0 36px -6px var(--ring)}
+    .logo-text{font-family:'Serpentine-Bold-Oblique', Impact, Haettenschweiler, 'Arial Black', 'Agency FB', sans-serif; letter-spacing:1px; font-size: clamp(18px, 3.2vw, 28px); color:var(--green); text-shadow:0 0 12px rgba(57,255,20,0.35); white-space:nowrap}
+
+    nav ul{display:flex; gap:20px; list-style:none; margin:0; padding:0}
+    nav a{color:#e5e7eb; font-weight:600} nav a:hover{color:var(--green)}
+    .cta{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; background:var(--green); color:#001300; font-weight:800; border-radius:10px; border:1px solid #1a1a1a; box-shadow:0 0 0 2px #001300 inset, 0 12px 26px -10px var(--ring)}
+    .cta:hover{background:var(--green-600)} .menu-btn{display:none}
+
+    .hero{position:relative; overflow:hidden; border-bottom:1px solid rgba(57,255,20,0.18)}
+    .hero-inner{display:grid; grid-template-columns: 1.1fr 0.9fr; gap:36px; align-items:center; padding:64px 0}
+    .hero h1{font-size: clamp(28px, 5.4vw, 56px); line-height:1.15; margin:0 0 16px; font-weight:900; letter-spacing:0.2px}
+    .accent{color:var(--green)} .sub{color:#cbd5e1; font-size: clamp(16px, 2.1vw, 20px); margin-bottom:26px}
+    .hero .actions{display:flex; flex-wrap:wrap; gap:14px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:10px; font-weight:800; border:1px solid rgba(57,255,20,0.25); transition: all .2s ease}
+    .btn.primary{background:var(--green); color:#001300; box-shadow:0 0 0 2px #001300 inset, 0 12px 26px -10px var(--ring)} .btn.primary:hover{background:var(--green-600)}
+    .btn.ghost{background:#0a0a0a} .btn.ghost:hover{background:#121212}
+    .hero-art{aspect-ratio: 16/11; border-radius:16px; background: radial-gradient(600px 280px at 20% 0%, rgba(57,255,20,0.08), transparent 60%), linear-gradient(180deg, #0a0a0a, #0f0f0f); border:1px solid rgba(57,255,20,0.18); display:grid; place-items:center; color:var(--slate); text-align:center; padding:22px}
+
+    section{padding:64px 0} .eyebrow{color:var(--green); font-weight:800; letter-spacing:1.2px; text-transform:uppercase; font-size:12px}
+    h2{font-size: clamp(22px, 4vw, 38px); margin:10px 0 22px}
+    .grid{display:grid; gap:18px; grid-template-columns: repeat(12, 1fr)}
+    .card{grid-column: span 4; background:linear-gradient(180deg, #0c0c0c, var(--card)); border:1px solid rgba(57,255,20,0.16); border-radius:14px; padding:20px; transition: transform .15s ease, border-color .2s ease, box-shadow .2s ease}
+    .card:hover{ transform: translateY(-3px); border-color: rgba(57,255,20,0.45); box-shadow: 0 16px 40px -24px var(--ring) }
+    .card h3{margin:14px 0 8px} .card p{color:#cbd5e1; margin:0 0 12px}
+    .card .tag{display:inline-block; background:#0a0a0a; border:1px solid rgba(57,255,20,0.25); color:var(--green); font-weight:800; font-size:12px; padding:4px 8px; border-radius:6px}
+    .icon{width:42px; height:42px; border-radius:10px; display:grid; place-items:center; background:#0a0a0a; border:1px solid rgba(57,255,20,0.25); color:var(--green)}
+
+    .band{background:linear-gradient(180deg, #060606, #0b0b0b); border-top:1px solid rgba(57,255,20,0.18); border-bottom:1px solid rgba(57,255,20,0.18); padding:28px 0}
+    .band-inner{display:flex; align-items:center; justify-content:center; gap:22px; flex-wrap:wrap; text-align:center}
+    .band-inner b{color:var(--green)}
+
+    .cols{display:grid; grid-template-columns: 1.1fr 0.9fr; gap:22px}
+    .list{margin:0; padding:0 0 0 18px} .list li{margin:6px 0; color:#cbd5e1}
+
+    .contact{display:grid; grid-template-columns: 1fr 1fr; gap:22px}
+    form{background:#0a0a0a; border:1px solid rgba(57,255,20,0.18); border-radius:12px; padding:18px}
+    label{display:block; font-weight:700; margin:10px 0 6px}
+    input, textarea, select{width:100%; background:#090909; color:#e5e7eb; border:1px solid rgba(57,255,20,0.18); border-radius:8px; padding:12px; outline:none}
+    input:focus, textarea:focus, select:focus{border-color:var(--green); box-shadow:0 0 0 3px rgba(57,255,20,0.18)}
+    .muted{color:#9aa3b2; font-size:14px}
+
+    footer{border-top:1px solid rgba(57,255,20,0.18); padding:28px 0 56px; color:#b8c0cc; font-size:14px}
+    .footer-grid{display:grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap:20px}
+    .footer-title{color:var(--green); font-weight:900; margin-bottom:12px}
+    .small{font-size:12px; color:#97a0ae}
+
+    @media (max-width: 960px){
+      .hero-inner{grid-template-columns:1fr; padding:36px 0}
+      .cols{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+      .card{grid-column: span 6}
+      nav ul{display:none}
+      .menu-btn{display:inline-flex; align-items:center; gap:8px; color:#e5e7eb}
+    }
+    @media (max-width: 640px){
+      .card{grid-column: span 12}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- ======= HEADER ======= -->
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-badge">R</div>
+        <div class="logo-text">RCW ENERGY SERVICES</div>
+      </div>
+      <nav aria-label="Primary">
+        <button class="menu-btn" aria-expanded="false" aria-controls="mobileNav">☰ Menu</button>
+        <ul id="desktopNav">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#rentals">Rentals</a></li>
+          <li><a href="#about">About &amp; HSE</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="tel:+19039999999" aria-label="Call dispatch now">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#001300" viewBox="0 0 24 24"><path d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.47a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.2 2.09z"/></svg>
+        24/7 Dispatch
+      </a>
+    </div>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Field‑proven crews. <span class="accent">On‑time results.</span></h1>
+        <p class="sub">RCW Energy Services delivers <b>water transfer</b>, <b>hydrovac</b>, <b>rig washing</b>, <b>land management</b>, <b>rentals</b>, and <b>roustabout</b> with a safety‑first mindset and 24/7 responsiveness across the Haynesville Shale.</p>
+        <div class="actions">
+          <a class="btn primary" href="#services">Explore Services</a>
+          <a class="btn ghost" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="RCW Energy fleet and field operations">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 24 24" fill="none" stroke="#39FF14" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+          <p class="muted">Add your fleet or field photo here (1920×1080 recommended)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SERVICES ======= -->
+  <section id="services" class="container">
+    <div class="eyebrow">Services</div>
+    <h2>What we do—safely, efficiently, and at scale</h2>
+
+    <div class="grid">
+      <article class="card"><div class="icon" aria-hidden="true">💧</div><h3>Water Transfer</h3><p>High‑volume, leak‑safe layflat and HDPE solutions, pump spreads, and 24/7 monitoring for frac and production support.</p><span class="tag">Pumps • Layflat • Monitoring</span></article>
+      <article class="card"><div class="icon" aria-hidden="true">🧰</div><h3>Hydrovac</h3><p>Non‑destructive daylighting, slot trenching, and utility exposure—minimizing risk while speeding up critical path work.</p><span class="tag">Daylighting • Trenching</span></article>
+      <article class="card"><div class="icon" aria-hidden="true">🧼</div><h3>Rig Washing</h3><p>Hot‑wash, degreasing, and containment to keep locations compliant and ready for the next stage.</p><span class="tag">Hot Wash • Containment</span></article>
+      <article class="card"><div class="icon" aria-hidden="true">🌿</div><h3>Land Management</h3><p>Access road building, pad prep, remediation, and right‑of‑way maintenance with environmental stewardship.</p><span class="tag">ROW • Reclamation</span></article>
+      <article id="rentals" class="card"><div class="icon" aria-hidden="true">🏗️</div><h3>Rentals</h3><p>Frac tanks, pumps, generators, light towers, safety gear, and temporary infrastructure—delivered and serviced.</p><span class="tag">Tanks • Pumps • Power</span></article>
+      <article class="card"><div class="icon" aria-hidden="true">🔧</div><h3>Roustabout</h3><p>General construction, hook‑ups, repairs, and site maintenance crews who show up prepared and finish right.</p><span class="tag">Construction • Maintenance</span></article>
+    </div>
+  </section>
+
+  <!-- ======= BAND ======= -->
+  <div class="band">
+    <div class="container band-inner">
+      <span>📍 <b>Haynesville Shale coverage</b> with rapid mobilization</span>
+      <span>🕒 <b>24/7 dispatch</b> and live updates</span>
+      <span>🛡️ <b>HSE‑driven</b> culture and training</span>
+      <span>🔩 <b>Well‑maintained fleet</b></span>
+    </div>
+  </div>
+
+  <!-- ======= ABOUT / HSE ======= -->
+  <section id="about" class="container cols">
+    <div>
+      <div class="eyebrow">About RCW</div>
+      <h2>Built for the field. Trusted by operators.</h2>
+      <p>We combine disciplined safety practices with seasoned supervisors and purpose‑built equipment. Our teams solve problems, protect schedules, and communicate clearly—so operations keep moving.</p>
+      <ul class="list">
+        <li>Experienced supervisors and certified operators</li>
+        <li>Preventive maintenance and quality controls</li>
+        <li>Digital reporting with photos and time stamps</li>
+        <li>Rapid call‑outs and surge capacity</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">HSE</div>
+      <h2>Safety isn’t a box to check—it’s how we work</h2>
+      <p>Our policies and training exceed industry standards. JSAs, tailgate meetings, and stop‑work authority are standard on every job.</p>
+      <ul class="list">
+        <li>Daily JSAs and hazard assessments</li>
+        <li>Equipment inspections and lockout/tagout</li>
+        <li>Environmental containment and cleanup</li>
+        <li>Driver qualification and fatigue management</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section id="contact" class="container">
+    <div class="eyebrow">Contact</div>
+    <h2>Need a quote or a rapid mobilization?</h2>
+    <div class="contact">
+      <form name="quote" method="POST" action="https://formspree.io/f/yourFormId">
+        <label for="name">Name</label>
+        <input id="name" name="name" required placeholder="Your name" />
+
+        <label for="company">Company</label>
+        <input id="company" name="company" placeholder="Company name" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required placeholder="you@company.com" />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" placeholder="903‑___‑____" />
+
+        <label for="service">Service</label>
+        <select id="service" name="service">
+          <option>Water Transfer</option>
+          <option>Hydrovac</option>
+          <option>Rig Washing</option>
+          <option>Land Management</option>
+          <option>Rentals</option>
+          <option>Roustabout</option>
+          <option>Other</option>
+        </select>
+
+        <label for="msg">Scope / Location / Timeline</label>
+        <textarea id="msg" name="message" rows="5" placeholder="Tell us what you need..."></textarea>
+
+        <div style="display:flex; gap:10px; margin-top:14px">
+          <button class="btn primary" type="submit">Request Quote</button>
+          <a class="btn ghost" href="mailto:dispatch@rcwenergyservices.com">Email Dispatch</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Or call anytime: <a href="tel:+19039999999">903‑999‑9999</a></p>
+      </form>
+
+      <div>
+        <div class="eyebrow">Coverage</div>
+        <h3 style="margin-top:6px">Where we operate</h3>
+        <p class="muted">Operating throughout the <b>Haynesville Shale</b> with rapid mobilization from our regional yards.</p>
+        <div class="card" style="margin-top:10px">
+          <h4 style="margin:0 0 6px">Typical Mobilization</h4>
+          <p class="small">Water Transfer: <b>&lt; 24 hrs</b><br/>Hydrovac: <b>Same day</b><br/>Roustabout: <b>Next day</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CAREERS ======= -->
+  <section id="careers" class="container">
+    <div class="eyebrow">Careers</div>
+    <h2>Join the RCW team in the <span class="accent">Haynesville Shale</span></h2>
+    <div class="contact">
+      <form name="careers" method="POST" action="https://formspree.io/f/yourCareersFormId">
+        <label for="cname">Full name</label>
+        <input id="cname" name="name" required placeholder="Your name" />
+
+        <label for="cemail">Email</label>
+        <input id="cemail" type="email" name="email" required placeholder="you@example.com" />
+
+        <label for="cphone">Phone</label>
+        <input id="cphone" name="phone" required placeholder="903‑___‑____" />
+
+        <label for="crole">Position of interest</label>
+        <select id="crole" name="role">
+          <option>Water Transfer Tech</option>
+          <option>Hydrovac Operator</option>
+          <option>Rig Wash Tech</option>
+          <option>Roustabout</option>
+          <option>Mechanic</option>
+          <option>HSE/Field Supervisor</option>
+          <option>Other</option>
+        </select>
+
+        <label for="cloc">Primary work location</label>
+        <input id="cloc" name="location" placeholder="Haynesville (LA/TX), specific yard or area" />
+
+        <label for="cmsg">Experience / Certifications</label>
+        <textarea id="cmsg" name="message" rows="5" placeholder="Years of experience, certs (CDL, H2S, PEC, Safeland), availability..."></textarea>
+
+        <div style="display:flex; gap:10px; margin-top:14px">
+          <button class="btn primary" type="submit">Apply Now</button>
+          <a class="btn ghost" href="mailto:dispatch@rcwenergyservices.com?subject=Careers%20Application">Email HR</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Don’t want a form? Email your résumé to <a href="mailto:dispatch@rcwenergyservices.com">dispatch@rcwenergyservices.com</a></p>
+      </form>
+
+      <div>
+        <div class="eyebrow">Open Roles</div>
+        <h3 style="margin-top:6px">We’re hiring</h3>
+        <ul class="list">
+          <li>Water Transfer Techs (day/night)</li>
+          <li>Hydrovac Operators & Swampers</li>
+          <li>Rig Wash Techs</li>
+          <li>Roustabout Crews</li>
+          <li>Shop/Field Mechanics</li>
+        </ul>
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin:0 0 6px">What we offer</h4>
+          <ul class="list">
+            <li>Competitive pay with overtime opportunities</li>
+            <li>Safe, well‑maintained equipment and PPE</li>
+            <li>Steady work in the Haynesville Shale</li>
+          </ul>
+        </div>
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin:0 0 6px">Minimum requirements</h4>
+          <ul class="list">
+            <li>Valid driver’s license (CDL preferred for driver roles)</li>
+            <li>Ability to pass pre‑employment and random tests</li>
+            <li>Commitment to HSE and stop‑work authority</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-title">RCW Energy Services</div>
+        <p class="small">Operations built around safety, reliability, and clear communication.</p>
+      </div>
+      <div>
+        <div class="footer-title">Services</div>
+        <ul class="list">
+          <li>Water Transfer</li>
+          <li>Hydrovac</li>
+          <li>Rig Washing</li>
+          <li>Land Management</li>
+          <li>Rentals</li>
+          <li>Roustabout</li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <ul class="list">
+          <li><a href="tel:+19039999999">903‑999‑9999</a></li>
+          <li><a href="mailto:dispatch@rcwenergyservices.com">dispatch@rcwenergyservices.com</a></li>
+          <li><a href="#contact">Request a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Links</div>
+        <ul class="list">
+          <li><a href="#about">About &amp; HSE</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#rentals">Rentals</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" style="margin-top:18px">
+      <div class="small">© <span id="year"></span> RCW Energy Services. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu (simple)
+    const btn = document.querySelector('.menu-btn');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        let menu = document.getElementById('mobileNav');
+        if (!menu) {
+          menu = document.createElement('ul');
+          menu.id = 'mobileNav';
+          menu.style.listStyle = 'none';
+          menu.style.margin = '10px 0 0';
+          menu.style.padding = '12px';
+          menu.style.border = '1px solid rgba(57,255,20,0.18)';
+          menu.style.borderRadius = '10px';
+          menu.style.background = '#0a0a0a';
+          menu.innerHTML = `
+            <li style="margin:8px 0"><a href="#services">Services</a></li>
+            <li style="margin:8px 0"><a href="#rentals">Rentals</a></li>
+            <li style="margin:8px 0"><a href="#about">About &amp; HSE</a></li>
+            <li style="margin:8px 0"><a href="#careers">Careers</a></li>
+            <li style="margin:8px 0"><a href="#contact">Contact</a></li>
+          `;
+          btn.parentElement.appendChild(menu);
+        } else {
+          menu.style.display = isOpen ? 'none' : 'block';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
